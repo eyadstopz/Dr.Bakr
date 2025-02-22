@@ -1,142 +1,162 @@
-*{
-    margin: 0px;
+* {
+  margin: 0px;
 }
 
 body {
-    font-family: 'Orbitron', sans-serif;
-    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-    overflow-x: hidden;
+  font-family: "Orbitron", sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  overflow-x: hidden;
 }
 
 nav {
-    position: relative;
-    height: 4em;
-    width: 100%;
-    background-color: black;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  height: 4em;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navmm {
-    display: flex;
-    gap: 5.3em;
+  display: flex;
+  gap: 5.3em;
 }
 
-.nav1, .nav2 {
-    color: white;
-    text-decoration: none;
-    padding: 0.67em 1.33em;
-    border: 0.13em solid white;
-    border-radius: 0.33em;
-    font-family: 'Orbitron', sans-serif;
-    transition: all 0.3s ease;
+.nav1,
+.nav2 {
+  color: white;
+  text-decoration: none;
+  padding: 0.67em 1.33em;
+  border: 0.13em solid white;
+  border-radius: 0.33em;
+  font-family: "Orbitron", sans-serif;
+  transition: all 0.3s ease;
 }
 
-.nav1:hover, .nav2:hover {
-    background-color: white;
-    color: black;
-    box-shadow: 0 0 0.67em white, 0 0 1.3em white, 0 0 2em white;
+.nav1:hover,
+.nav2:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 0.67em white, 0 0 1.3em white, 0 0 2em white;
 }
 
 header {
-    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-    color: white;
-    text-align: center;
-    padding: 3.33em 1.3em;
-    font-family: 'Orbitron', sans-serif;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: white;
+  text-align: center;
+  padding: 3.33em 1.3em;
+  font-family: "Orbitron", sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 header .drinfo img {
-    width: 10em;
-    height: 10em;
-    border-radius: 50%;
-    border: 0.33em solid white;
-    box-shadow: 0 0 10px white, 0 0 1.3em white, 0 0 30px white;
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  border: 0.33em solid white;
+  box-shadow: 0 0 10px white, 0 0 1.3em white, 0 0 30px white;
 }
 
 header h2 {
-    margin-top: 1.3em;
-    font-size: 2.5em;
+  margin-top: 1.3em;
+  font-size: 2.5em;
 }
 
 header p {
-    margin-top: 10px;
-    font-size: 1.2em;
+  margin-top: 10px;
+  font-size: 1.2em;
 }
 
 .scores {
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    width: 100%;
-    height: 30%;
-    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-    padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  padding: 10px;
 }
 
 .scoressatest {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    width: 80%;
-    white-space: nowrap; /* Ensure images stay in a single line */
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 80%;
+  white-space: nowrap; /* Ensure images stay in a single line */
 }
 
 .scoressatest img {
-    width: 20%;
-    height: 200px;
-    margin-right: 10px; /* Add some space between images */
+  width: 250px;
+  height: 150px;
+  margin-right: 15px;
+  border-radius: 8px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .scoressatest img {
+    width: 200px;
+    height: 120px;
+    margin-right: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .scoressatest img {
+    width: 160px;
+    height: 100px;
+    margin-right: 8px;
+  }
 }
 
 .scorestitle {
-    text-align: center;
-    font-size: 2em;
-    margin: 1.3em;
-    font-family: 'Orbitron', sans-serif;
-    color: white;
+  text-align: center;
+  font-size: 1.5em;
+  margin: 1.3em;
+  font-family: "Orbitron", sans-serif;
+  color: white;
 }
 
-
-.drinfo{
-    border: 2px solid beige;
-    border-radius: 2.67em;
-    padding: 1.3em;
-    margin: 1.3em;
-    box-shadow: 0 0 10px beige, 0 0 1.3em beige, 0 0 2em beige;
+.drinfo {
+  border: 2px solid beige;
+  border-radius: 2.67em;
+  padding: 1.3em;
+  margin: 1.3em;
+  box-shadow: 0 0 10px beige, 0 0 1.3em beige, 0 0 2em beige;
 }
 
-.team{
-    border: 1px solid black;
-    border-radius: 2.67em;
-    width: 68%;
-    height: 30%;
-    margin: 2% auto;
-    text-align: center;
-    padding: 1.3em;
-    box-shadow: 0 0 10px black, 0 0 1.3em black, 0 0 2em black;
-    background-color: #614e9a;
-    color: white;
+.team {
+  border: 1px solid black;
+  border-radius: 2.67em;
+  width: 68%;
+  height: 30%;
+  margin: 2% auto;
+  text-align: center;
+  padding: 1.3em;
+  box-shadow: 0 0 10px black, 0 0 1.3em black, 0 0 2em black;
+  background-color: #614e9a;
+  color: white;
 }
 
-.assistants-title{
-    text-align: center;
-    font-size: 2em;
-    margin: 1.3em;
-    font-family: 'Orbitron', sans-serif;
-    color: black;
+.assistants-title {
+  text-align: center;
+  font-size: 2em;
+  margin: 1.3em;
+  font-family: "Orbitron", sans-serif;
+  color: black;
 }
 
-.assistants{
-    justify-content: center;
-    gap: 1.3em;
-    margin-top: 1.3em;
+.assistants {
+  justify-content: center;
+  gap: 1.3em;
+  margin-top: 1.3em;
 }
 
-.assistants div{
-    border: 2px solid black;
-    border-radius: 2.67em;
-    padding: 1.3em;
+.assistants div {
+  border: 2px solid black;
+  border-radius: 2.67em;
+  padding: 1.3em;
 }
